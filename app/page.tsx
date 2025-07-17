@@ -1,5 +1,6 @@
 import { Mail, Phone } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link" 
 import PhilosophyAboutSection from "@/components/philosophy-about-section"
 import VideoServicesSection from "@/components/video-services-section"
 import HistorySection from "@/components/history-section"
@@ -13,7 +14,7 @@ export default function HomePage() {
       <header className="h-20 bg-white shadow-sm sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
           {/* Logo Section */}
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="w-12 h-12 bg-[#1E3A8A] rounded flex items-center justify-center">
               <div className="w-8 h-8 bg-white rounded-sm"></div>
             </div>
@@ -23,19 +24,23 @@ export default function HomePage() {
             >
               AEGIS LLP
             </div>
-          </div>
+          </Link>
 
           {/* Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {[
-              { jp: "ホーム", en: "HOME" },
-              { jp: "サービス", en: "SERVICE" },
-              { jp: "事業内容", en: "BUSINESS" },
-              { jp: "実績", en: "WORKS" },
-              { jp: "会社概要", en: "COMPANY" },
-              { jp: "採用情報", en: "RECRUIT" },
+              { jp: "ホーム", en: "HOME", href: "/" },
+              { jp: "サービス", en: "SERVICE", href: "/services" },
+              { jp: "事業内容", en: "BUSINESS", href: "/business" },
+              { jp: "実績", en: "WORKS", href: "/projects" },
+              { jp: "会社概要", en: "COMPANY", href: "/about" },
+              { jp: "採用情報", en: "RECRUIT", href: "/careers" },
             ].map((item, index) => (
-              <div key={index} className="text-center cursor-pointer hover:opacity-80 transition-opacity">
+              <Link
+                key={index}
+                href={item.href}
+                className="text-center cursor-pointer hover:opacity-80 transition-opacity"
+              >
                 <div
                   className="text-sm text-[#6B7280]"
                   style={{ fontFamily: "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', serif" }}
@@ -48,7 +53,7 @@ export default function HomePage() {
                 >
                   {item.en}
                 </div>
-              </div>
+              </Link>
             ))}
           </nav>
 
@@ -62,15 +67,19 @@ export default function HomePage() {
               <div className="text-xs text-[#6B7280]">【受付時間】平日8:10-17:30</div>
             </div>
 
-            <button className="w-16 h-12 bg-[#F59E0B] text-white text-xs font-bold rounded hover:bg-[#D97706] transition-colors">
-              <div>採用</div>
-              <div className="italic">Entry</div>
-            </button>
+            <Link href="/careers">
+              <button className="w-16 h-12 bg-[#F59E0B] text-white text-xs font-bold rounded hover:bg-[#D97706] transition-colors">
+                <div>採用</div>
+                <div className="italic">Entry</div>
+              </button>
+            </Link>
 
-            <button className="w-32 h-12 bg-[#1E3A8A] text-white text-sm font-bold rounded hover:bg-[#1E40AF] transition-colors flex items-center justify-center gap-2">
-              <Mail className="w-4 h-4" />
-              お問い合わせ
-            </button>
+            <Link href="/contact">
+              <button className="w-32 h-12 bg-[#1E3A8A] text-white text-sm font-bold rounded hover:bg-[#1E40AF] transition-colors flex items-center justify-center gap-2">
+                <Mail className="w-4 h-4" />
+                お問い合わせ
+              </button>
+            </Link>
           </div>
         </div>
       </header>
