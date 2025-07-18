@@ -27,10 +27,9 @@ export default function ServicesPage() {
             {[
               { jp: "ホーム", en: "HOME", href: "/" },
               { jp: "サービス", en: "SERVICE", href: "/services" },
-              { jp: "事業内容", en: "BUSINESS", href: "/business" },
-              { jp: "実績", en: "WORKS", href: "/projects" },
-              { jp: "会社概要", en: "COMPANY", href: "/about" },
-              { jp: "採用情報", en: "RECRUIT", href: "/careers" },
+              { jp: "プロジェクト", en: "PROJECTS", href: "/projects" },
+              { jp: "について", en: "ABOUT", href: "/about" },
+              { jp: "キャリア", en: "CAREERS", href: "/careers" },
             ].map((item, index) => (
               <Link
                 key={index}
