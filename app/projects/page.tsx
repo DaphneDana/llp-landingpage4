@@ -177,6 +177,7 @@ export default function ProjectsPage() {
               { jp: "プロジェクト", en: "PROJECTS", href: "/projects" },
               { jp: "について", en: "ABOUT", href: "/about" },
               { jp: "キャリア", en: "CAREERS", href: "/careers" },
+              { jp: "テクノロジー", en: "TECHNOLOGY", href: "/technology" },
             ].map((item, index) => (
               <Link
                 key={index}
