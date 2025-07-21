@@ -71,8 +71,8 @@ export default function ProjectsPage() {
       date: '2024年3月',
       population: '9万人',
       image: '/placeholder.svg?height=200&width=400&text=Government+Building+Seki',
-      tag: 'システム開発',
-      tagColor: 'bg-blue-500'
+      // tag: 'システム開発',
+      // tagColor: 'bg-blue-500'
     },
     {
       id: 2,
@@ -82,8 +82,8 @@ export default function ProjectsPage() {
       date: '2024年1月',
       population: '42万人',
       image: '/placeholder.svg?height=200&width=400&text=Cloud+Infrastructure+Toyota',
-      tag: 'クラウド構築',
-      tagColor: 'bg-green-500'
+      // tag: 'クラウド構築',
+      // tagColor: 'bg-green-500'
     },
     {
       id: 3,
@@ -93,8 +93,8 @@ export default function ProjectsPage() {
       date: '2023年11月',
       population: '31万人',
       image: '/placeholder.svg?height=200&width=400&text=Security+Center+Yokkaichi',
-      tag: 'セキュリティ',
-      tagColor: 'bg-red-500'
+      // tag: 'セキュリティ',
+      // tagColor: 'bg-red-500'
     },
     {
       id: 4,
@@ -104,8 +104,8 @@ export default function ProjectsPage() {
       date: '2023年9月',
       population: '79万人',
       image: '/placeholder.svg?height=200&width=400&text=Smart+Office+Hamamatsu',
-      tag: 'DX推進',
-      tagColor: 'bg-purple-500'
+      // tag: 'DX推進',
+      // tagColor: 'bg-purple-500'
     },
     {
       id: 5,
@@ -115,8 +115,8 @@ export default function ProjectsPage() {
       date: '2023年7月',
       population: '46万人',
       image: '/placeholder.svg?height=200&width=400&text=Finance+System+Kanazawa',
-      tag: 'システム開発',
-      tagColor: 'bg-indigo-500'
+      // tag: 'システム開発',
+      // tagColor: 'bg-indigo-500'
     },
     {
       id: 6,
@@ -126,8 +126,8 @@ export default function ProjectsPage() {
       date: '2023年5月',
       population: '26万人',
       image: '/placeholder.svg?height=200&width=400&text=Disaster+Recovery+Fukui',
-      tag: 'クラウド構築',
-      tagColor: 'bg-teal-500'
+      // tag: 'クラウド構築',
+      // tagColor: 'bg-teal-500'
     }
   ]
 
@@ -353,8 +353,8 @@ export default function ProjectsPage() {
                         <p className="font-semibold">詳細を見る</p>
                       </div>
                     </div>
-                    <div className={`absolute top-4 right-4 ${project.tagColor} text-white px-3 py-1 rounded-full text-sm font-bold backdrop-blur-sm bg-opacity-90`}>
-                      {project.tag}
+                    <div className={`absolute top-4 right-4  text-white px-3 py-1 rounded-full text-sm font-bold backdrop-blur-sm bg-opacity-90`}>
+                      {/* {project.tag} */}
                     </div>
                   </div>
                   <div className="p-6">

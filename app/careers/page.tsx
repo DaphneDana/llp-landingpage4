@@ -206,38 +206,32 @@ export default function CareersPage() {
     {
       icon: DollarSign,
       title: '競争力のある給与',
-      description: '業界水準を上回る給与体系。成果に応じた昇給・賞与制度で頑張りを正当に評価します。',
-      color: 'bg-green-100 text-green-600'
+      description: '業界水準を上回る給与体系。成果に応じた昇給・賞与制度で頑張りを正当に評価します。'
     },
     {
       icon: Clock,
       title: 'ワークライフバランス',
-      description: 'フレックスタイム制・リモートワーク制度で、効率的で柔軟な働き方を実現できます。',
-      color: 'bg-blue-100 text-blue-600'
+      description: 'フレックスタイム制・リモートワーク制度で、効率的で柔軟な働き方を実現できます。'
     },
     {
       icon: GraduationCap,
       title: '成長支援制度',
-      description: '資格取得支援・社外研修参加・技術書籍購入支援など、継続的なスキルアップをサポートします。',
-      color: 'bg-purple-100 text-purple-600'
+      description: '資格取得支援・社外研修参加・技術書籍購入支援など、継続的なスキルアップをサポートします。'
     },
     {
       icon: Heart,
       title: '充実した福利厚生',
-      description: '各種社会保険・退職金制度・健康診断・社員旅行など、安心して長く働ける環境を提供します。',
-      color: 'bg-pink-100 text-pink-600'
+      description: '各種社会保険・退職金制度・健康診断・社員旅行など、安心して長く働ける環境を提供します。'
     },
     {
       icon: Users,
       title: 'チームワーク重視',
-      description: '風通しの良い職場環境で、チーム一丸となってプロジェクトを成功に導きます。',
-      color: 'bg-yellow-100 text-yellow-600'
+      description: '風通しの良い職場環境で、チーム一丸となってプロジェクトを成功に導きます。'
     },
     {
       icon: TrendingUp,
       title: 'キャリア成長',
-      description: '多様なプロジェクトへの参加機会と明確なキャリアパスで、着実なキャリアアップが可能です。',
-      color: 'bg-indigo-100 text-indigo-600'
+      description: '多様なプロジェクトへの参加機会と明確なキャリアパスで、着実なキャリアアップが可能です。'
     }
   ]
 
@@ -507,7 +501,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                       <Briefcase className="w-4 h-4" />
                       {job.type} • {job.experience}
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-[#F59E0B] font-semibold">
+                    <div className="flex items-center gap-2 text-sm text-[#1E3A8A] font-semibold">
                       <DollarSign className="w-4 h-4" />
                       {job.salary}
                     </div>
@@ -551,8 +545,8 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   key={index}
                   className="text-center group hover:scale-105 transition-transform duration-300"
                 >
-                  <div className={`w-16 h-16 ${benefit.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
-                    <IconComponent className="w-8 h-8" />
+                  <div className="w-16 h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h3
                     className="text-xl font-bold text-[#1E3A8A] mb-3"
@@ -595,7 +589,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   className="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="relative mb-6">
-                    <div className="w-16 h-16 bg-[#F59E0B] rounded-full flex items-center justify-center mx-auto">
+                    <div className="w-16 h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto">
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
                     <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#1E3A8A] rounded-full flex items-center justify-center">
@@ -622,7 +616,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       </section>
 
       {/* Application Form */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white" id="application-form">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2
@@ -652,7 +646,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] focus:border-transparent"
                   placeholder="山田 太郎"
                 />
               </div>
@@ -667,7 +661,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] focus:border-transparent"
                   placeholder="example@email.com"
                 />
               </div>
@@ -682,7 +676,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] focus:border-transparent"
                   placeholder="090-1234-5678"
                 />
               </div>
@@ -696,7 +690,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   value={formData.position}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] focus:border-transparent"
                 >
                   <option value="">選択してください</option>
                   {jobs.map(job => (
@@ -713,7 +707,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   name="experience"
                   value={formData.experience}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] focus:border-transparent"
                 >
                   <option value="">選択してください</option>
                   <option value="未経験">未経験</option>
@@ -733,7 +727,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   name="availability"
                   value={formData.availability}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] focus:border-transparent"
                   placeholder="即日、2024年4月、要相談 など"
                 />
               </div>
@@ -748,7 +742,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                 onChange={handleFileChange}
                 accept=".pdf,.doc,.docx"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] focus:border-transparent"
               />
               <p className="text-sm text-[#6B7280] mt-1">PDF、Word形式（最大5MB）</p>
             </div>
@@ -763,7 +757,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                 onChange={handleInputChange}
                 required
                 rows={6}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent resize-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] focus:border-transparent resize-none"
                 placeholder="志望動機や自己PRをご記入ください（500文字以内）"
               />
             </div>
@@ -871,7 +865,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   <ul className="space-y-2 mb-6">
                     {selectedJob.requirements.map((req, index) => (
                       <li key={index} className="flex items-start gap-2">
-                        <Zap className="w-4 h-4 text-[#F59E0B] mt-0.5 flex-shrink-0" />
+                        <Zap className="w-4 h-4 text-[#1E3A8A] mt-0.5 flex-shrink-0" />
                         <span className="text-[#6B7280] text-sm">{req}</span>
                       </li>
                     ))}
@@ -883,7 +877,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                   <ul className="space-y-2 mb-6">
                     {selectedJob.benefits.map((benefit, index) => (
                       <li key={index} className="flex items-start gap-2">
-                        <Award className="w-4 h-4 text-[#F59E0B] mt-0.5 flex-shrink-0" />
+                        <Award className="w-4 h-4 text-[#1E3A8A] mt-0.5 flex-shrink-0" />
                         <span className="text-[#6B7280] text-sm">{benefit}</span>
                       </li>
                     ))}
@@ -906,7 +900,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-[#6B7280]">給与:</span>
-                        <span className="text-[#F59E0B] font-semibold">{selectedJob.salary}</span>
+                        <span className="text-[#1E3A8A] font-semibold">{selectedJob.salary}</span>
                       </div>
                     </div>
                   </div>

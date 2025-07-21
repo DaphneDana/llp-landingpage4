@@ -169,19 +169,19 @@ export default function AboutUsPage() {
                   </div>
                   <div className="space-y-2">
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-4 h-4 text-[#F59E0B] mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-[#1E3A8A] mt-0.5" />
                       <span className="text-sm text-[#1E3A8A]">地方自治体向けシステム開発・運用</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-4 h-4 text-[#F59E0B] mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-[#1E3A8A] mt-0.5" />
                       <span className="text-sm text-[#1E3A8A]">行政システムコンサルティング</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-4 h-4 text-[#F59E0B] mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-[#1E3A8A] mt-0.5" />
                       <span className="text-sm text-[#1E3A8A]">セキュリティソリューション</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-4 h-4 text-[#F59E0B] mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-[#1E3A8A] mt-0.5" />
                       <span className="text-sm text-[#1E3A8A]">クラウドサービス提供</span>
                     </div>
                   </div>
@@ -220,19 +220,19 @@ export default function AboutUsPage() {
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#F59E0B]">200+</div>
+                    <div className="text-2xl font-bold text-white mb-2">200+</div>
                     <div className="text-sm">導入自治体</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#F59E0B]">25</div>
+                    <div className="text-2xl font-bold text-white mb-2">25</div>
                     <div className="text-sm">年の実績</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#F59E0B]">99.9%</div>
+                    <div className="text-2xl font-bold text-white mb-2">99.9%</div>
                     <div className="text-sm">システム稼働率</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#F59E0B]">24/7</div>
+                    <div className="text-2xl font-bold text-white mb-2">24/7</div>
                     <div className="text-sm">サポート体制</div>
                   </div>
                 </div>
@@ -266,7 +266,7 @@ export default function AboutUsPage() {
                 { year: "2025年", event: "導入自治体数200突破、次世代システム開発プロジェクト始動" },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 bg-[#F59E0B] rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-20 h-20 bg-[#1E3A8A] rounded-full flex items-center justify-center">
                     <Calendar className="w-8 h-8 text-white" />
                   </div>
                   <div className="pt-2">
@@ -318,7 +318,7 @@ export default function AboutUsPage() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-center">
-              <div className="w-16 h-16 bg-[#F59E0B] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3
@@ -377,7 +377,7 @@ export default function AboutUsPage() {
               "セキュリティ監査合格"
             ].map((cert, index) => (
               <div key={index} className="bg-gray-50 p-6 rounded-lg text-center">
-                <div className="w-12 h-12 bg-[#F59E0B] rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-6 h-6 text-white" />
                 </div>
                 <div

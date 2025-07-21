@@ -192,12 +192,12 @@ export default function ServicesPage() {
                 <div className="space-y-2">
                   {service.features.map((feature, fIndex) => (
                     <div key={fIndex} className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#F59E0B]" />
+                      <CheckCircle className="w-4 h-4 text-[#1E3A8A]" />
                       <span className="text-sm text-[#1E3A8A]">{feature}</span>
                     </div>
                   ))}
                 </div>
-                <button className="mt-4 text-[#F59E0B] hover:text-[#D97706] font-medium flex items-center gap-2 transition-colors">
+                <button className="mt-4 text-[#1E3A8A] hover:text-[#1E40AF] font-medium flex items-center gap-2 transition-colors">
                   詳細を見る
                   <ArrowRight className="w-4 h-4" />
                 </button>
@@ -247,9 +247,9 @@ export default function ServicesPage() {
                 icon: Headphones
               }
             ].map((process, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center bg-gray-50 p-6 rounded-lg border border-gray-200">
                 <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-[#F59E0B] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-20 h-20 bg-[#1E3A8A] rounded-full flex items-center justify-center mx-auto mb-4">
                     <process.icon className="w-10 h-10 text-white" />
                   </div>
                   <div className="absolute -top-2 -right-2 w-8 h-8 bg-[#1E3A8A] rounded-full flex items-center justify-center">
@@ -302,8 +302,8 @@ export default function ServicesPage() {
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <Star className="w-5 h-5 text-[#F59E0B]" />
-                  <span className="text-sm font-bold text-[#F59E0B]">注目サービス</span>
+                  <Star className="w-5 h-5 text-[#1E3A8A]" />
+                  <span className="text-sm font-bold text-[#1E3A8A]">注目サービス</span>
                 </div>
                 <h3
                   className="text-xl font-bold text-[#1E3A8A] mb-3"
@@ -320,7 +320,7 @@ export default function ServicesPage() {
                 <div className="space-y-2 mb-4">
                   {["マイナンバー完全対応", "他システム連携機能", "24時間365日稼働", "高度セキュリティ"].map((feature, index) => (
                     <div key={index} className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#F59E0B]" />
+                      <CheckCircle className="w-4 h-4 text-[#1E3A8A]" />
                       <span className="text-sm text-[#1E3A8A]">{feature}</span>
                     </div>
                   ))}
@@ -345,8 +345,8 @@ export default function ServicesPage() {
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <Star className="w-5 h-5 text-[#F59E0B]" />
-                  <span className="text-sm font-bold text-[#F59E0B]">最新技術</span>
+                  <Star className="w-5 h-5 text-[#1E3A8A]" />
+                  <span className="text-sm font-bold text-[#1E3A8A]">最新技術</span>
                 </div>
                 <h3
                   className="text-xl font-bold text-[#1E3A8A] mb-3"
@@ -363,12 +363,12 @@ export default function ServicesPage() {
                 <div className="space-y-2 mb-4">
                   {["多要素認証", "エンドポイント保護", "ネットワーク分離", "リアルタイム監視"].map((feature, index) => (
                     <div key={index} className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-[#F59E0B]" />
+                      <CheckCircle className="w-4 h-4 text-[#1E3A8A]" />
                       <span className="text-sm text-[#1E3A8A]">{feature}</span>
                     </div>
                   ))}
                 </div>
-                <button className="bg-[#1E3A8A] hover:bg-[#1E40AF] text-white px-6 py-2 rounded font-medium transition-colors">
+                <button className="bg-[#F59E0B] hover:bg-[#D97706] text-white px-6 py-2 rounded font-medium transition-colors">
                   セキュリティ診断申込
                 </button>
               </div>
@@ -397,7 +397,7 @@ export default function ServicesPage() {
               
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#F59E0B] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -407,7 +407,7 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#F59E0B] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center flex-shrink-0">
                     <Headphones className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -417,7 +417,7 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#F59E0B] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#1E3A8A] rounded-full flex items-center justify-center flex-shrink-0">
                     <Cog className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -437,19 +437,19 @@ export default function ServicesPage() {
               </h3>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F59E0B] mb-2">99.9%</div>
+                  <div className="text-3xl font-bold text-white mb-2">99.9%</div>
                   <div className="text-sm">システム稼働率</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F59E0B] mb-2">5分</div>
+                  <div className="text-3xl font-bold text-white mb-2">5分</div>
                   <div className="text-sm">平均応答時間</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F59E0B] mb-2">24/7</div>
+                  <div className="text-3xl font-bold text-white mb-2">24/7</div>
                   <div className="text-sm">監視体制</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#F59E0B] mb-2">200+</div>
+                  <div className="text-3xl font-bold text-white mb-2">200+</div>
                   <div className="text-sm">サポート自治体</div>
                 </div>
               </div>
