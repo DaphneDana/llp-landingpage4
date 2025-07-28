@@ -323,6 +323,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
               { jp: "について", en: "ABOUT", href: "/about" },
               { jp: "キャリア", en: "CAREERS", href: "/careers" },
               { jp: "テクノロジー", en: "TECHNOLOGY", href: "/technology" },
+              { jp: "ニュース", en: "NEWS", href: "/news" }
             ].map((item, index) => (
               <Link
                 key={index}
@@ -735,7 +736,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
             <div className="mt-6">
               <label className="block text-sm font-medium text-[#1E3A8A] mb-2">
-                履歴書・職務経歴書 <span className="text-red-500">*</span>
+                履歴書・職務経歴書 <span className="text-blue-500">*</span>
               </label>
               <input
                 type="file"

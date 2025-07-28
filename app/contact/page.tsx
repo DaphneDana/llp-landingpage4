@@ -100,7 +100,7 @@ export default function ContactPage() {
       phone: '0575-28-9999',
       availability: '24時間365日',
       icon: Zap,
-      color: 'bg-red-500'
+      color: 'bg-blue-500'
     },
     {
       title: '営業担当',
@@ -116,7 +116,7 @@ export default function ContactPage() {
       phone: '0575-28-3316',
       availability: '平日 9:00-17:00',
       icon: User,
-      color: 'bg-green-500'
+      color: 'bg-blue-500'
     }
   ]
 
@@ -147,6 +147,7 @@ export default function ContactPage() {
               { jp: "について", en: "ABOUT", href: "/about" },
               { jp: "キャリア", en: "CAREERS", href: "/careers" },
               { jp: "テクノロジー", en: "TECHNOLOGY", href: "/technology" },
+              { jp: "ニュース", en: "NEWS", href: "/news" }
             ].map((item, index) => (
               <Link
                 key={index}

@@ -173,6 +173,7 @@ export default function NewsPage() {
               { jp: "について", en: "ABOUT", href: "/about" },
               { jp: "キャリア", en: "CAREERS", href: "/careers" },
               { jp: "テクノロジー", en: "TECHNOLOGY", href: "/technology" },
+              { jp: "ニュース", en: "NEWS", href: "/news" }
             ].map((item, index) => (
               <Link
                 key={index}
