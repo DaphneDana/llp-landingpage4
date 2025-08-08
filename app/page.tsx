@@ -46,16 +46,16 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="h-20 bg-white shadow-sm sticky top-0 z-10">
+      {/* Header - Optimized height */}
+      <header className="h-16 bg-white shadow-sm sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
           {/* Logo Section */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-[#1E3A8A] rounded flex items-center justify-center">
-              <div className="w-8 h-8 bg-white rounded-sm"></div>
+            <div className="w-10 h-10 bg-[#1E3A8A] rounded flex items-center justify-center">
+              <div className="w-6 h-6 bg-white rounded-sm"></div>
             </div>
             <div
-              className="text-xl font-bold text-[#1E3A8A]"
+              className="text-lg font-bold text-[#1E3A8A]"
               style={{ fontFamily: "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', serif" }}
             >
               AEGIS LLP
@@ -63,7 +63,7 @@ export default function HomePage() {
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             {[
               { jp: "ホーム", en: "HOME", href: "/" },
               { jp: "サービス", en: "SERVICE", href: "/services" },
@@ -79,13 +79,13 @@ export default function HomePage() {
                 className="text-center cursor-pointer hover:opacity-80 transition-opacity"
               >
                 <div
-                  className="text-sm text-[#6B7280]"
+                  className="text-xs text-[#6B7280]"
                   style={{ fontFamily: "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', serif" }}
                 >
                   {item.jp}
                 </div>
                 <div
-                  className="text-sm font-bold text-[#1E3A8A]"
+                  className="text-xs font-bold text-[#1E3A8A]"
                   style={{ fontFamily: "'Helvetica Neue', Arial, sans-serif" }}
                 >
                   {item.en}
@@ -95,34 +95,34 @@ export default function HomePage() {
           </nav>
 
           {/* Contact Info & Buttons */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-4">
             <div className="text-right">
-              <div className="text-lg font-bold text-[#1E3A8A] flex items-center gap-2">
-                <Phone className="w-4 h-4" />
+              <div className="text-base font-bold text-[#1E3A8A] flex items-center gap-2">
+                <Phone className="w-3 h-3" />
                 0575-28-3313
               </div>
               <div className="text-xs text-[#6B7280]">【受付時間】平日8:10-17:30</div>
             </div>
 
             <Link href="/careers">
-              <button className="w-16 h-12 bg-[#F59E0B] text-white text-xs font-bold rounded hover:bg-[#D97706] transition-colors">
+              <button className="w-14 h-10 bg-[#F59E0B] text-white text-xs font-bold rounded hover:bg-[#D97706] transition-colors">
                 <div>採用</div>
-                <div className="italic">Entry</div>
+                <div className="italic text-xs">Entry</div>
               </button>
             </Link>
 
             <Link href="/contact">
-              <button className="w-32 h-12 bg-[#1E3A8A] text-white text-sm font-bold rounded hover:bg-[#1E40AF] transition-colors flex items-center justify-center gap-2">
-                <Mail className="w-4 h-4" />
-                お問い合わせ
+              <button className="w-28 h-10 bg-[#1E3A8A] text-white text-sm font-bold rounded hover:bg-[#1E40AF] transition-colors flex items-center justify-center gap-1">
+                <Mail className="w-3 h-3" />
+                問い合わせ
               </button>
             </Link>
           </div>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative h-[600px] overflow-hidden">
+      {/* Hero Section - FIRST VIEW OPTIMIZED */}
+      <section className="relative min-h-screen overflow-hidden flex items-center" style={{ minHeight: 'calc(100vh - 4rem)' }}>
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -141,14 +141,14 @@ export default function HomePage() {
           </svg>
         </div>
 
-        {/* Left Content */}
-        <div className="relative z-10 h-full flex items-center">
+        {/* Main Content Container */}
+        <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto px-4 w-full">
             <div className="max-w-lg text-white">
               {/* Top Taglines */}
-              <div className="mb-6 space-y-2">
+              <div className="mb-4 space-y-1">
                 <div className="inline-block">
-                  <span className="text-[#06B6D4] italic text-lg font-medium">Trusted Government Solutions</span>
+                  <span className="text-[#06B6D4] italic text-base font-medium">Trusted Government Solutions</span>
                 </div>
                 <div className="inline-block bg-black bg-opacity-50 px-3 py-1 rounded">
                   <span
@@ -160,9 +160,9 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Main Heading */}
+              {/* Main Heading - Optimized sizing */}
               <h1
-                className="text-4xl lg:text-5xl font-bold leading-tight mb-6"
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4"
                 style={{ fontFamily: "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', serif" }}
               >
                 信頼と実績で支える
@@ -172,9 +172,9 @@ export default function HomePage() {
                 行政システム
               </h1>
 
-              {/* Description */}
+              {/* Description - Condensed */}
               <div
-                className="text-lg leading-relaxed space-y-2 mb-8"
+                className="text-base md:text-lg leading-relaxed space-y-1 mb-6"
                 style={{ fontFamily: "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', serif" }}
               >
                 <p>創業25年、全国200以上の自治体との実績</p>
@@ -182,8 +182,8 @@ export default function HomePage() {
                 <p>政府調達基準完全準拠・セキュリティ認証取得済み</p>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* CTA Buttons - Always visible */}
+              <div className="flex flex-col sm:flex-row gap-3">
                 <Link href="/services">
                   <button className="bg-[#F59E0B] hover:bg-[#D97706] text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
                     サービス詳細
@@ -201,10 +201,10 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Right Side Circular Images */}
+        {/* Right Side Circular Images - Responsive */}
         <div className="hidden lg:block absolute right-8 top-1/2 transform -translate-y-1/2">
           <div className="relative">
-            <div className="absolute -top-16 right-0 w-32 h-32 rounded-full border-4 border-[#F59E0B] overflow-hidden">
+            <div className="absolute -top-12 right-0 w-24 h-24 rounded-full border-4 border-[#F59E0B] overflow-hidden">
               <Image
                 src="/placeholder.svg?height=128&width=128"
                 alt="Government building 1"
@@ -212,7 +212,7 @@ export default function HomePage() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute top-8 -right-8 w-40 h-40 rounded-full border-4 border-[#F59E0B] overflow-hidden">
+            <div className="absolute top-6 -right-6 w-32 h-32 rounded-full border-4 border-[#F59E0B] overflow-hidden">
               <Image
                 src="/placeholder.svg?height=160&width=160"
                 alt="Government building 2"
@@ -220,7 +220,7 @@ export default function HomePage() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute top-32 right-16 w-32 h-32 rounded-full border-4 border-[#F59E0B] overflow-hidden">
+            <div className="absolute top-24 right-12 w-24 h-24 rounded-full border-4 border-[#F59E0B] overflow-hidden">
               <Image
                 src="/placeholder.svg?height=128&width=128"
                 alt="Government building 3"
@@ -231,7 +231,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Copyright - Repositioned */}
         <div className="absolute bottom-4 right-4 transform rotate-90 origin-bottom-right">
           <span className="text-white text-xs">© 2025 AEGIS LLP. All rights reserved.</span>
         </div>

@@ -71,8 +71,6 @@ export default function ProjectsPage() {
       date: '2024年3月',
       population: '9万人',
       image: '/placeholder.svg?height=200&width=400&text=Government+Building+Seki',
-      // tag: 'システム開発',
-      // tagColor: 'bg-blue-500'
     },
     {
       id: 2,
@@ -82,8 +80,6 @@ export default function ProjectsPage() {
       date: '2024年1月',
       population: '42万人',
       image: '/placeholder.svg?height=200&width=400&text=Cloud+Infrastructure+Toyota',
-      // tag: 'クラウド構築',
-      // tagColor: 'bg-green-500'
     },
     {
       id: 3,
@@ -93,8 +89,6 @@ export default function ProjectsPage() {
       date: '2023年11月',
       population: '31万人',
       image: '/placeholder.svg?height=200&width=400&text=Security+Center+Yokkaichi',
-      // tag: 'セキュリティ',
-      // tagColor: 'bg-red-500'
     },
     {
       id: 4,
@@ -104,8 +98,6 @@ export default function ProjectsPage() {
       date: '2023年9月',
       population: '79万人',
       image: '/placeholder.svg?height=200&width=400&text=Smart+Office+Hamamatsu',
-      // tag: 'DX推進',
-      // tagColor: 'bg-purple-500'
     },
     {
       id: 5,
@@ -115,8 +107,6 @@ export default function ProjectsPage() {
       date: '2023年7月',
       population: '46万人',
       image: '/placeholder.svg?height=200&width=400&text=Finance+System+Kanazawa',
-      // tag: 'システム開発',
-      // tagColor: 'bg-indigo-500'
     },
     {
       id: 6,
@@ -126,8 +116,60 @@ export default function ProjectsPage() {
       date: '2023年5月',
       population: '26万人',
       image: '/placeholder.svg?height=200&width=400&text=Disaster+Recovery+Fukui',
-      // tag: 'クラウド構築',
-      // tagColor: 'bg-teal-500'
+    },
+    {
+      id: 7,
+      category: 'dx',
+      title: '大阪府堺市 デジタル市役所プロジェクト',
+      description: 'AIを活用した文書作成支援システムで職員の業務効率を30%向上。',
+      date: '2024年2月',
+      population: '83万人',
+      image: '/placeholder.svg?height=200&width=400&text=Digital+Office+Sakai',
+    },
+    {
+      id: 8,
+      category: 'security',
+      title: '兵庫県神戸市 サイバーセキュリティ強化',
+      description: '24時間365日監視体制とインシデント対応システムを構築。',
+      date: '2023年12月',
+      population: '154万人',
+      image: '/placeholder.svg?height=200&width=400&text=Cyber+Security+Kobe',
+    },
+    {
+      id: 9,
+      category: 'system',
+      title: '奈良県奈良市 教育情報システム',
+      description: '小中学校の学習管理から進路指導まで統合した教育プラットフォーム。',
+      date: '2023年10月',
+      population: '36万人',
+      image: '/placeholder.svg?height=200&width=400&text=Education+System+Nara',
+    },
+    {
+      id: 10,
+      category: 'cloud',
+      title: '滋賀県大津市 統合型GIS基盤',
+      description: 'クラウド型地理情報システムで全庁横断的な地図データ活用を実現。',
+      date: '2023年8月',
+      population: '34万人',
+      image: '/placeholder.svg?height=200&width=400&text=GIS+Platform+Otsu',
+    },
+    {
+      id: 11,
+      category: 'dx',
+      title: '京都府宇治市 スマートヘルスケア',
+      description: 'IoTとビッグデータを活用した高齢者見守りシステムを構築。',
+      date: '2023年6月',
+      population: '18万人',
+      image: '/placeholder.svg?height=200&width=400&text=Healthcare+System+Uji',
+    },
+    {
+      id: 12,
+      category: 'system',
+      title: '和歌山県和歌山市 統合基幹システム',
+      description: '住民サービスから内部事務まで全業務を支える基幹システムを更新。',
+      date: '2023年4月',
+      population: '36万人',
+      image: '/placeholder.svg?height=200&width=400&text=Core+System+Wakayama',
     }
   ]
 
@@ -298,6 +340,61 @@ export default function ProjectsPage() {
         </div>
       </section>
 
+      {/* Projects Categories Heading Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2
+            className="text-4xl font-bold text-[#1E3A8A] mb-6"
+            style={{ fontFamily: "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', serif" }}
+          >
+            プロジェクト事例
+          </h2>
+          <div className="w-20 h-1 bg-[#F59E0B] mx-auto mb-8"></div>
+          <p
+            className="text-lg text-[#6B7280] max-w-3xl mx-auto leading-relaxed mb-12"
+            style={{ fontFamily: "'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', serif" }}
+          >
+            システム開発からクラウド構築、セキュリティ対策、DX推進まで、様々な分野での豊富な実績をご覧ください。<br />
+            各自治体の課題に応じた最適なソリューションを提供しています。
+          </p>
+          
+          {/* Category Description Cards */}
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
+              <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <div className="w-6 h-6 bg-white rounded"></div>
+              </div>
+              <h3 className="font-bold text-[#1E3A8A] mb-2">システム開発</h3>
+              <p className="text-sm text-[#6B7280]">基幹システムの構築・更新</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg border border-green-200">
+              <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <div className="w-6 h-6 bg-white rounded"></div>
+              </div>
+              <h3 className="font-bold text-[#1E3A8A] mb-2">クラウド構築</h3>
+              <p className="text-sm text-[#6B7280]">クラウド移行・基盤構築</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg border border-red-200">
+              <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <div className="w-6 h-6 bg-white rounded"></div>
+              </div>
+              <h3 className="font-bold text-[#1E3A8A] mb-2">セキュリティ</h3>
+              <p className="text-sm text-[#6B7280]">情報セキュリティ強化</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg border border-purple-200">
+              <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <div className="w-6 h-6 bg-white rounded"></div>
+              </div>
+              <h3 className="font-bold text-[#1E3A8A] mb-2">DX推進</h3>
+              <p className="text-sm text-[#6B7280]">デジタル変革の実現</p>
+            </div>
+          </div> */}
+        </div>
+      </section>
+
       {/* Filter Section */}
       <section className="py-8 bg-white sticky top-20 z-40 shadow-sm">
         <div className="max-w-7xl mx-auto px-4">
@@ -321,6 +418,13 @@ export default function ProjectsPage() {
                 {filterOption.label}
               </button>
             ))}
+          </div>
+          
+          {/* Results Count */}
+          <div className="text-center mt-4">
+            <p className="text-[#6B7280]">
+              {filteredProjects.length}件のプロジェクトが見つかりました
+            </p>
           </div>
         </div>
       </section>
@@ -353,9 +457,6 @@ export default function ProjectsPage() {
                         <ArrowRight className="w-8 h-8 mx-auto mb-2 animate-pulse" />
                         <p className="font-semibold">詳細を見る</p>
                       </div>
-                    </div>
-                    <div className={`absolute top-4 right-4  text-white px-3 py-1 rounded-full text-sm font-bold backdrop-blur-sm bg-opacity-90`}>
-                      {/* {project.tag} */}
                     </div>
                   </div>
                   <div className="p-6">
